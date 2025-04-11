@@ -1,0 +1,37 @@
+@use '../variables'
+    
+.card
+    height: min(74vh, 950px)
+    width: 23%
+    background-color: variables.$card-bg-color
+    border-radius: variables.$card-border-radius
+    box-shadow: variables.$card-box-shadow
+
+    &__qrcode
+        width: 100%
+        aspect-ratio: 1/1
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &-image
+            height: 90%
+            border-radius: variables.$image-border-radius
+            
+    &__text
+        padding-top: 1vh
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 2vh
+
+        &-title
+            width: 82%
+            font-size: variables.$font-size
+            color: variables.$text-color
+
+        &-description
+            width: 78%
+            font-size: variables.$font-size-secondary
+            color: variables.$text-color-secondary
