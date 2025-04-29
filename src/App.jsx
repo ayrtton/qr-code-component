@@ -7,6 +7,7 @@ function App() {
 			<main className="main">
 				<QRCode />
 			</main>
+			<Footer />
 		</>
 	);
 }

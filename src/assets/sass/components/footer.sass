@@ -1,0 +1,11 @@
+@use '../variables'
+@use '../mixins'
+    
+.footer
+    &__attribution
+        @include mixins.flexbox
+        height: 10vh
+        gap: .5vh
+        font-size: variables.$font-size-secondary 
+        color: variables.$text-color
+    
